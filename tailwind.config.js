@@ -9,6 +9,8 @@ export default {
 
       colors: {
         "primary": '#3D00B7',
+        "primary-dark": '#360185',
+        "primary-light": '#8878ff',
         "secondary": '#2639ED',
         "gray-text": "#565656",
         "gray-dark-text": "#363639",
@@ -23,16 +25,12 @@ export default {
 
       fontFamily: {
         dmsans: ["DM Sans", "sans-serif"],
-        montserrat: ["Integral CF", "sans-serif"],
+        integral: ["Integral CF", "sans-serif"],
       },
 
     },
 
-    screens: {
-      xs: "480px",
-      sm: "768px",
-      md: "1060px",
-    },
+   
   },
   plugins: [],
 }
