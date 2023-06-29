@@ -13,3 +13,71 @@ body,
   font-family: "DM Sans", sans-serif;
   @apply text-gray-dark-text;
 }
+
+.card {
+  position: absolute;
+  right: 0;
+  transition: all 0.4s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.card-3{
+  transform: translate(-25%, -50%);
+  background-image: url('../src/assets/Header/img1.png');
+  background-size: cover;
+}
+
+.card-2{
+  transform: translate(-15%, -50%) scale(0.95);
+  background-image: url('../src/assets/Header/img2.png');
+  background-size: cover;
+}
+
+.card-2:hover {
+  transform: translate(-15%, -50%) scale(1);
+  z-index: 40;
+}
+
+.card-1{
+  transform: translate(-5%, -50%) scale(0.90);
+  background-image: url('../src/assets/Header/img3.png');
+  background-size: cover;
+}
+
+.card-1:hover {
+  transform: translate(-5%, -50%) scale(1);
+  z-index: 40;
+}
+
+@media only screen and (max-width:1150px){
+  .card{
+    top: 100px;
+  }
+}
+
+@media only screen and (max-width:1030px){
+  .card{
+    top: 200px;
+    right:25%;
+  }
+}
+@media only screen and (max-width:768px){
+  .card{
+    right:20%;
+  }
+}
+
+@media only screen and (max-width:550px){
+  .card{
+    right:5%;
+  }
+}
+
+@media only screen and (max-width:490px){
+  .card{
+    right:-5%;
+  }
+}
+
+
+
+

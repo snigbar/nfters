@@ -10,13 +10,13 @@ type props = {
 
 const Navbar = ({isAboveMedia, setMenuToggle, menuToggle}:props) => {
   return (
-    <nav className={`${flexRowCenter} py-7`}>
+    <nav className={`${flexRowCenter} py-5 md:py-7`}>
         <p className="text-2xl 2xl:text-4xl text-primary font-bold font-integral mb-1">NFTERS</p>
 
        {isAboveMedia? <><ul className='flex items-center gap-3 xl:gap-5 font-dmsans text-lg xl:text-xl font-medium'>
-            <li className="border-b border-b-transparent hover:border-b-primary transition-all duration-200 cursor-pointer px-2 py-1">Marketplace</li>
-            <li className="border-b border-b-transparent hover:border-b-primary transition-all duration-200 cursor-pointer px-2 py-1">Resource</li>
-            <li className="border-b border-b-transparent hover:border-b-primary transition-all duration-200 cursor-pointer px-2 py-1">About</li>
+            <li className="border-b border-b-transparent hover:border-b-primary hover:text-primary transition-all duration-200 cursor-pointer px-2 py-1">Marketplace</li>
+            <li className="border-b border-b-transparent hover:border-b-primary hover:text-primary transition-all duration-200 cursor-pointer px-2 py-1">Resource</li>
+            <li className="border-b border-b-transparent hover:border-b-primary hover:text-primary transition-all duration-200 cursor-pointer px-2 py-1">About</li>
         </ul>
 
         <div className="flex gap-4 justify-between items-center self-start">

@@ -1,4 +1,3 @@
-import React from 'react'
 import { RiSearch2Line } from 'react-icons/ri'
 import { RxCrossCircled } from "react-icons/rx";
 import { flexColCenter } from '../../Utilities'
