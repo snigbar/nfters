@@ -28,6 +28,10 @@ export default {
         integral: ["Integral CF", "sans-serif"],
       },
 
+      content: {
+        dotImg: "url('./src/assets/Header/dots.png')",
+      },
+
     },
 
    

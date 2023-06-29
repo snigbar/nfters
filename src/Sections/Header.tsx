@@ -1,10 +1,8 @@
 import CountUp from 'react-countup';
 import Heading from '../Components/Heading'
-import img1 from '../assets/Header/img1.png'
-import img2 from '../assets/Header/img2.png'
-import img3 from '../assets/Header/img3.png'
 import { FaEthereum } from "react-icons/fa";
 import user1 from '../assets/Users/user6.png'
+import circularImg from '../assets/Header/circularImg.png'
 
 
 
@@ -17,7 +15,7 @@ const Header = () => {
    <section className='py-12 lg:min-h-[85vh] flex flex-col justify-center items-center lg:flex-row mb-8'>
 
     {/* heading text */}
-    <div className='flex flex-col justify-between items-start gap-4 w-4/5 lg:w-3/5'>
+    <div className="heading flex flex-col justify-between items-start gap-4 w-4/5 lg:w-3/5 lg:before:content-dotImg before:absolute before:z-[-1] before:bottom-14 before:left-14">
         <Heading size='lg:text-[40px]'>Discover, and Collect Digital Arts and Nfts</Heading>
         <p className='font-dmsans text-gray-text text-lg md:text-xl text-center lg:text-left w-full lg:w-[70%] leading-[165%]'>Digital marketplace for crypto collectibles and non-fungible tokens (NFTs). Buy, Sell, and discover exclusive digital assets.</p>
         <button className="text-white bg-primary hover:bg-primary-dark py-3 px-6 text-lg md:py-5 md:px-10 md:text-xl rounded-full active:translate-y-1 transition-transform duration-300 hover:drop-shadow-md mt-3 mx-auto lg:mx-0">Explore Now</button>
@@ -40,7 +38,7 @@ const Header = () => {
 
     {/* cards */}
   
-    <div className='w-full lg:w-2/5 h-full py-8'>
+    <div className='w-full lg:w-2/5 h-full py-3 md:py-8'>
       <div className='card-container relative'>
       {/* card 1 */}
 
@@ -72,11 +70,13 @@ const Header = () => {
 
         </div>
 
+        
+
         </div>
 
        {/* card 2 */}
        
-       <div className="card card-2 h-[320px] w-[280px] lg:h-[400px] lg:w-[360px] mx-auto rounded-3xl px-6 py-4 md:py-2 text-white flex flex-col justify-between">
+       <div className="card card-2 h-[320px] w-[280px] lg:h-[400px] lg:w-[360px] mx-auto rounded-3xl px-6 py-8 text-white flex flex-col justify-between">
           {/* heading */}
         <div>
         <h1 className='font-dmsan text-2xl'>Abstr Gradient NFT</h1>
@@ -134,9 +134,11 @@ const Header = () => {
           </div>
 
         </div>
-
+        {/* circular img */}
+        <img src={circularImg} className='absolute -left-12 bottom-28 h-20 w-20 md:h-24 md:w-24'></img>
         </div>
 
+      
       </div>
     </div>
 
